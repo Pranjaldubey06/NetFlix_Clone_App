@@ -57,11 +57,11 @@ const MovieRow = () => {
       <Slider {...settings}>
         {data.map((item, index) => (
           <div key={index} className="px-2">
-            <div className="bg-black rounded-lg overflow-hidden flex justify-center items-center">
+            <div className="aspect-[2/3] w-full bg-black rounded-lg overflow-hidden flex justify-center items-center">
               <img
                 src={item.img}
                 alt={`Movie ${index}`}
-                className="h-64 w-full object-cover rounded-md hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
